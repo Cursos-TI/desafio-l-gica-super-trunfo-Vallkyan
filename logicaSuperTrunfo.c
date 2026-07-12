@@ -3,8 +3,7 @@
 
 int main() {
 
-  // Área para definição das variáveis para armazenar as propriedades das cidades
-  // As variaveis 1 são para a carta 1 e as variaveis 2 são para a carta 2
+  // Área para definição das variáveis para armazenar as propriedades das cidades. Variaveis 1 são para a carta 1 e as variaveis 2 são para a carta 2
 char estado1, codigo1[4], estado2, codigo2[4], nomedacidade1[50], nomedacidade2[50];
 int populacao1, turisticos1, populacao2, turisticos2;
 float pib1, pib2, area1, area2; 
@@ -69,9 +68,49 @@ float pib1, pib2, area1, area2;
   printf("Carta 1\nEstado: %c\nCodigo: %s\nNome da Cidade: %s\npopulacao: %d\narea: %.2f\npib: %.2f\nturisticos: %d\ndensidade: %.2f\npibpercapita: %.2f\n", estado1, codigo1, nomedacidade1, populacao1, area1, pib1, turisticos1, densidade1, pibpercapita1);
   printf("Carta 2\nEstado: %c\nCodigo: %s\nNome da Cidade: %s\npopulacao: %d\narea: %.2f\npib: %.2f\nturisticos: %d\ndensidade: %.2f\npibpercapita: %.2f\n", estado2, codigo2, nomedacidade2, populacao2, area2, pib2, turisticos2, densidade2, pibpercapita2);
   
-  // Área para saída dos dados comparados de comparação lógica
-  if (populacao1 > populacao2) { printf ("Carta 1 Venceu!\n");}
-    else {printf ("Cart2 Venceu!");}
-  
+  //Área de Menu Interativo
+  int opcao;
+  printf ("Digite qual atributo da carta você deseja comparar de acordo as opções numéricas de 1 a 7, de acordo ao que segue abaixo explicado:\n");
+  printf ("Digite 1 se quiser comparar o atributo 'População':/n");
+  printf ("Digite 2 se quiser comparar o atributo 'Área':/n");
+  printf ("Digite 3 se quiser comparar o atributo 'PIB':/n");
+  printf ("Digite 4 se quiser comparar o atributo 'Pontos Túristicos':/n");
+  printf ("Digite 5 se quiser comparar o atributo 'Densidade':/n");
+  printf ("Digite 6 se quiser comparar o atributo 'PIB per Capita':/n");
+  printf ("Digite 7 se quiser comparar o atributo 'Super Poder':/n");
+  scanf ("%d", opcao);
+
+  switch (opcao) {
+    case 1:
+     if (populacao1 > populacao2) {printf ("Carta 1 Venceu!\n");}
+      else { printf ("Carta 2 Venceu!\n")};
+      break;
+    case 2:
+     if (area1 > area2) {printf ("Carta 1 Venceu!\n");}
+      else { printf ("Carta 2 Venceu!\n")};
+      break;
+    case 3:
+     if (pib1 > pib2) {printf ("Carta 1 Venceu!\n");}
+      else { printf ("Carta 2 Venceu!\n")};
+      break;
+    case 4:
+     if (turisticos1 > turisticos2) {printf ("Carta 1 Venceu!\n");}
+      else { printf ("Carta 2 Venceu!\n")};
+      break;
+    case 5:
+     if (densidade1 < densidade2) {printf ("Carta 1 Venceu!\n");}
+      else { printf ("Carta 2 Venceu!\n")};
+      break;
+    case 6:
+     if (superpoder1 > superpoder2) {printf ("Carta 1 Venceu!\n");}
+      else { printf ("Carta 2 Venceu!\n")};
+      break;
+    case 7:
+     if (populacao1 > populacao2) {printf ("Carta 1 Venceu!\n");}
+      else { printf ("Carta 2 Venceu!\n")};
+      break;
+    default:
+      break;} 
+      
 //fechamento do programa
 return 0;}
