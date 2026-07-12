@@ -71,13 +71,14 @@ float pib1, pib2, area1, area2;
   //Área de Menu Interativo
   int opcao;
   printf ("Digite qual atributo da carta você deseja comparar de acordo as opções numéricas de 1 a 7, de acordo ao que segue abaixo explicado:\n");
-  printf ("Digite 1 se quiser comparar o atributo 'População':/n");
-  printf ("Digite 2 se quiser comparar o atributo 'Área':/n");
-  printf ("Digite 3 se quiser comparar o atributo 'PIB':/n");
-  printf ("Digite 4 se quiser comparar o atributo 'Pontos Túristicos':/n");
-  printf ("Digite 5 se quiser comparar o atributo 'Densidade':/n");
-  printf ("Digite 6 se quiser comparar o atributo 'PIB per Capita':/n");
-  printf ("Digite 7 se quiser comparar o atributo 'Super Poder':/n");
+  printf ("Digite 1 se quiser comparar o atributo 'População': \n");
+  printf ("Digite 2 se quiser comparar o atributo 'Área': \n");
+  printf ("Digite 3 se quiser comparar o atributo 'PIB': \n");
+  printf ("Digite 4 se quiser comparar o atributo 'Pontos Túristicos': \n");
+  printf ("Digite 5 se quiser comparar o atributo 'Densidade': \n");
+  printf ("Digite 6 se quiser comparar o atributo 'PIB per Capita': \n");
+  printf ("Digite 7 se quiser comparar o atributo 'Super Poder': \n");
+
   scanf ("%d", opcao);
 
   switch (opcao) {
