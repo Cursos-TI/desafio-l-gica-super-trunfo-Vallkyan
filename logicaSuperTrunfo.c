@@ -69,14 +69,9 @@ float pib1, pib2, area1, area2;
   printf("Carta 1\nEstado: %c\nCodigo: %s\nNome da Cidade: %s\npopulacao: %d\narea: %.2f\npib: %.2f\nturisticos: %d\ndensidade: %.2f\npibpercapita: %.2f\n", estado1, codigo1, nomedacidade1, populacao1, area1, pib1, turisticos1, densidade1, pibpercapita1);
   printf("Carta 2\nEstado: %c\nCodigo: %s\nNome da Cidade: %s\npopulacao: %d\narea: %.2f\npib: %.2f\nturisticos: %d\ndensidade: %.2f\npibpercapita: %.2f\n", estado2, codigo2, nomedacidade2, populacao2, area2, pib2, turisticos2, densidade2, pibpercapita2);
   
-  // Área para saída dos dados comparados
-  printf("POPULAÇÃO VENCEDORA: %d\n", populacao1 > populacao2);
-  printf("ÁREA VENCEDORA: %d\n",area1 > area2);
-  printf("PONTOS TURÍSTICOS VENCEDORA: %d\n", turisticos1 > turisticos2);
-  printf("DENSIDADE VENCEDORA: %d\n", densidade1 < densidade2);
-  printf("PIB PER CAPITA VENCEDORA: %d\n", pibpercapita1 > pibpercapita2);
-  printf("SUPERPODER VENCEDORA: %d\n", superpoder1 > superpoder2);
-
+  // Área para saída dos dados comparados de comparação lógica
+  if (populacao1 > populacao2) { printf ("Carta 1 Venceu!\n");}
+    else {printf ("Cart2 Venceu!");}
+  
 //fechamento do programa
 return 0;}
-}
