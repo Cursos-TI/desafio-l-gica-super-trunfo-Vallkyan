@@ -79,7 +79,7 @@ float pib1, pib2, area1, area2;
   printf ("Digite 6 se quiser comparar o atributo 'PIB per Capita': \n");
   printf ("Digite 7 se quiser comparar o atributo 'Super Poder': \n");
 
-  scanf ("%d", opcao);
+  scanf ("%d", &opcao);
 
   switch (opcao) {
     case 1:
@@ -103,11 +103,11 @@ float pib1, pib2, area1, area2;
       else { printf ("Carta 2 Venceu!\n");};
       break;
     case 6:
-     if (superpoder1 > superpoder2) {printf ("Carta 1 Venceu!\n");}
+     if (pibpercapita1 > pibpercapita2) {printf ("Carta 1 Venceu!\n");}
       else { printf ("Carta 2 Venceu!\n");}
       break;
     case 7:
-     if (populacao1 > populacao2) {printf ("Carta 1 Venceu!\n");}
+     if (superpoder1 > superpoder2) {printf ("Carta 1 Venceu!\n");}
       else { printf ("Carta 2 Venceu!\n");}
       break;
     default:
