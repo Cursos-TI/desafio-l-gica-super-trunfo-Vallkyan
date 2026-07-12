@@ -83,31 +83,31 @@ float pib1, pib2, area1, area2;
   switch (opcao) {
     case 1:
      if (populacao1 > populacao2) {printf ("Carta 1 Venceu!\n");}
-      else { printf ("Carta 2 Venceu!\n")};
+      else { printf ("Carta 2 Venceu!\n");}
       break;
     case 2:
      if (area1 > area2) {printf ("Carta 1 Venceu!\n");}
-      else { printf ("Carta 2 Venceu!\n")};
+      else { printf ("Carta 2 Venceu!\n");}
       break;
     case 3:
      if (pib1 > pib2) {printf ("Carta 1 Venceu!\n");}
-      else { printf ("Carta 2 Venceu!\n")};
+      else { printf ("Carta 2 Venceu!\n");}
       break;
     case 4:
      if (turisticos1 > turisticos2) {printf ("Carta 1 Venceu!\n");}
-      else { printf ("Carta 2 Venceu!\n")};
+      else { printf ("Carta 2 Venceu!\n");}
       break;
     case 5:
      if (densidade1 < densidade2) {printf ("Carta 1 Venceu!\n");}
-      else { printf ("Carta 2 Venceu!\n")};
+      else { printf ("Carta 2 Venceu!\n");};
       break;
     case 6:
      if (superpoder1 > superpoder2) {printf ("Carta 1 Venceu!\n");}
-      else { printf ("Carta 2 Venceu!\n")};
+      else { printf ("Carta 2 Venceu!\n");}
       break;
     case 7:
      if (populacao1 > populacao2) {printf ("Carta 1 Venceu!\n");}
-      else { printf ("Carta 2 Venceu!\n")};
+      else { printf ("Carta 2 Venceu!\n");}
       break;
     default:
       break;} 
